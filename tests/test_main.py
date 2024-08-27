@@ -5,7 +5,7 @@ from src.main import concat, divide
 
 class TestMain(unittest.TestCase):
     def test_concat(self):
-        expectation = "KeyboardMouse"
+        expectation = "Keyboard Mouse"
         result = concat("Keyboard", "Mouse")
 
         self.assertEqual(expectation, result)
