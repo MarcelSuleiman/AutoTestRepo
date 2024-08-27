@@ -1,5 +1,5 @@
 def concat(a: str, b: str) -> str:
-    return f"{a}{b}"
+    return f"{a} {b}"
 
 
 def divide(a: int | float | str, b: int | float | str) -> float:
