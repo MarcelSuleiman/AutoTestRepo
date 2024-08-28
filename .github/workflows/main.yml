@@ -3,7 +3,8 @@ name: Push Event Workflow
 on: [push, pull_request] 
 
 jobs:
-  unit-testing:
+  custom-unit-testing:
+    name: test_protect
     runs-on: ubuntu-latest 
     
     steps:
