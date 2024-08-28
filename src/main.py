@@ -3,7 +3,10 @@ def concat(*args: str) -> str:
 
 
 def divide(a: int | float | str, b: int | float | str) -> float:
-    return float(a) / float(b)
+    try:
+        return float(a) / float(b)
+    except ZeroDivisionError:
+        raise ZeroDivisionError("Divide by ZERO is not allowed!")
 
 
 if __name__ == "__main__":
